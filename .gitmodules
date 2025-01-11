@@ -1,0 +1,4 @@
+[submodule "asm-ws"]
+	path = asm-ws
+	url = https://github.com/tathyagarg/asm-ws
+	branch = server-only
