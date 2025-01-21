@@ -4,7 +4,7 @@ WEBSITE_PORT ?= 35323
 WEBSITE = website
 
 .PHONY: all
-all: asm-ws
+all: kill asm-ws
 
 .PHONY: asm-ws
 asm-ws:
