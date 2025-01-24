@@ -12,3 +12,7 @@ window.addEventListener('scroll', () => {
 
   last_scroll = current_scroll;
 });
+
+var canvas = document.getElementById('canvas'),
+    ctx = canvas.getContext('2d');
+
