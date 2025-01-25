@@ -50,9 +50,7 @@ const edges = [
   [0, 4], [1, 5], [2, 6], [3, 7],
 ];
 
-requestAnimationFrame(drawLoop);
-
-function drawCube(cube, color = 'white') {
+function drawCube(cube, color = '#ddd') {
   ctx.strokeStyle = color;
   let angle = deltaTime * SPEED_Z * Math.PI * 2 + cube.offset.x;
   for (let v of cube.vertices) {
@@ -111,8 +109,18 @@ function drawLoop(now) {
   requestAnimationFrame(drawLoop);
 }
 
-const cubes = [
-  cube(point(100, 100, 100), point(200, 200, 200), point(0, 0, 0)),
-  cube(point(300, 300, 300), point(400, 400, 400), point(0.001, 0.001, 0.001)),
-];
+let cubes = [];
+for (let i = 0; i < 100; i++) {
+  let v0p = Math.random() * canvas.width,
+      v1p = Math.random() * canvas.height,
+      v2p = Math.random() * 100;
 
+  let length = 20;
+
+  let v0 = point(v0p, v1p, v2p),
+      v1 = point(v0p + length, v1p + length, v2p + length);
+
+  cubes.push(cube(v0, v1, point(Math.random() / 100, Math.random() / 100, Math.random() / 100)));
+}
+
+requestAnimationFrame(drawLoop);
