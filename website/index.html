@@ -19,21 +19,30 @@
       <div><a href="">Features</a></div>
     </div>
   </div>
-  <main>
-    <section id="hero">
-      <canvas id="canvas" width="10000" height="10000"></canvas>
-      <div id="header">
-        <h1>Z3D</h1>
-        <p>A 3D Game Engine</p>
-      </div>
-    </section>
+  <section id="hero">
+    <canvas id="canvas" width="0" height="0"></canvas>
+    <div id="header">
+      <h1>Z3D</h1>
+      <p>A 3D Game Engine</p>
+    </div>
+    <div id="wave-parent">
+      <!-- Made from haikei.app -->
+      <svg id="wave" viewBox="0 0 960 540" width="auto" height="auto" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+        <path
+          d="M0 455L16 465.7C32 476.3 64 497.7 96 506.7C128 515.7 160 512.3 192 510.7C224 509 256 509 288 498.8C320 488.7 352 468.3 384 459C416 449.7 448 451.3 480 463C512 474.7 544 496.3 576 498.3C608 500.3 640 482.7 672 472C704 461.3 736 457.7 768 466.3C800 475 832 496 864 506.5C896 517 928 517 944 517L960 517L960 541L944 541C928 541 896 541 864 541C832 541 800 541 768 541C736 541 704 541 672 541C640 541 608 541 576 541C544 541 512 541 480 541C448 541 416 541 384 541C352 541 320 541 288 541C256 541 224 541 192 541C160 541 128 541 96 541C64 541 32 541 16 541L0 541Z"
+          fill="var(--surface0)" stroke-linecap="round" stroke-linejoin="miter"></path>
+      </svg>
+    </div>
+  </section>
+  <section id="links">
     <div id="links">
       <div id="nav-head"></div>
       <div class="nav-elem"></div>
       <div class="nav-elem"></div>
       <div class="nav-elem"></div>
     </div>
-  </main>
+  </section>
   <marquee direction="right" scrollamount="12" onmouseover="this.stop()" onmouseout="this.start()" id="marq">
     <!-- Random cool text -->
   </marquee>

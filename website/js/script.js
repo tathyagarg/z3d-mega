@@ -22,9 +22,22 @@ const SPEED_X = 0.0001;
 var canvas = document.getElementById('canvas'),
     ctx = canvas.getContext('2d');
 
+var wave = document.getElementById('wave');
+
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
+//wave.width = window.innerWidth;
+wave.setAttribute('width', window.innerWidth);
+
 var deltaTime, timeLast = 0;
+
+window.addEventListener('resize', () => {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+  wave.width = window.innerWidth;
+
+  refreshCubes();
+});
 
 const point = (x, y, z) => ({ x, y, z });
 const cube = (v0, v1, offset) => {
@@ -110,17 +123,22 @@ function drawLoop(now) {
 }
 
 let cubes = [];
-for (let i = 0; i < 100; i++) {
-  let v0p = Math.random() * canvas.width,
-      v1p = Math.random() * canvas.height,
-      v2p = Math.random() * 100;
 
-  let length = 20;
-
-  let v0 = point(v0p, v1p, v2p),
-      v1 = point(v0p + length, v1p + length, v2p + length);
-
-  cubes.push(cube(v0, v1, point(Math.random() / 100, Math.random() / 100, Math.random() / 100)));
+function refreshCubes() {
+  cubes = [];
+  for (let i = 0; i < 100; i++) {
+    let v0p = Math.random() * canvas.width,
+        v1p = Math.random() * canvas.height,
+        v2p = Math.random() * 100;
+  
+    let length = 20;
+  
+    let v0 = point(v0p, v1p, v2p),
+        v1 = point(v0p + length, v1p + length, v2p + length);
+  
+    cubes.push(cube(v0, v1, point(Math.random() / 100, Math.random() / 100, Math.random() / 100)));
+  }
 }
 
+refreshCubes();
 requestAnimationFrame(drawLoop);
