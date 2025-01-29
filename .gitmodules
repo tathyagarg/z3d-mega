@@ -2,3 +2,10 @@
 	path = asm-ws
 	url = https://github.com/tathyagarg/asm-ws
 	branch = server-only
+[submodule "zest"]
+	path = zest
+	url = https://github.com/tathyagarg/zest
+[submodule "z3d"]
+	path = z3d
+	url = https://github.com/tathyagarg/z3d
+	branch = lib
