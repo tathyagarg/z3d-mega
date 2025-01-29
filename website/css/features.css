@@ -1,28 +1,24 @@
-#upcoming {
-  background-color: var(--surface1);
+.feat-sec {
+  width: 100%;
+  padding: 0 5%;
+  box-sizing: border-box;
 }
 
-#upcoming > div {
-  width: 90%;
-  margin: 0 auto;
-}
-
-#upcoming h1 {
+.feat-sec h1 {
   margin: 0;
   font-size: 5em;
 }
 
-#upcoming-feats {
+.feat-sec > div {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
   gap: 1em;
 }
 
-#upcoming-feats div {
+.feat-sec > div div {
   width: 100%;
   aspect-ratio: 1 / 1;
 
-  background-color: var(--surface1);
   border-radius: 1em;
   border: 2px solid var(--border);
 
@@ -35,19 +31,19 @@
   box-sizing: border-box;
 }
 
-#upcoming-feats h1 {
+.feat-sec > div h1 {
   font-size: 2em;
   text-align: center;
 }
 
-#upcoming-feats p {
+.feat-sec > div p {
   text-align: center;
 
   display: none;
   transition: display 0.5s allow-discrete;
 }
 
-#upcoming-feats div:hover p {
+.feat-sec > div div:hover p {
   display: block;
 
   transition: display 0.5s allow-discrete;
@@ -58,7 +54,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 1em;
 
-  height: 100px;
+  height: 5em;
 }
 
 #split div {
@@ -79,5 +75,13 @@
   height: 100%;
   width: 100%;
 
-  line-height: 100px;
+  line-height: 3.3em;
+}
+
+#upcoming, #upcoming > div div {
+  background-color: rgb(from var(--surface0) r g b / 50%);
+}
+
+#current, #current > div div {
+  background-color: rgb(from var(--surface1) r g b / 50%);
 }

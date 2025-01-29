@@ -1,11 +1,14 @@
 GET
 / index.html
+/features features.html
+/demo demo.html
 
 /css/style.css css/style.css
 /css/global.css css/global.css
 /css/features.css css/features.css
 
 /js/script.js js/script.js
+
 /assets/font.ttf assets/font.ttf
 /assets/logo.png assets/logo.png
-/features features.html
+/assets/video.webm assets/z3d.webm

@@ -18,6 +18,7 @@
     <div id="nav-elems">
       <a href="/">Home</a>
       <a href="/features">Features</a>
+      <a href="/demo">Demo</a>
     </div>
   </div>
   <section id="hero">
@@ -34,53 +35,88 @@
       </div>
     </div>
   </section>
-  <section id="current">
-
-  </section>
-  <section id="upcoming">
+  <section id="current" class="feat-sec">
+    <h1>Current Features</h1>
+    <hr>
+    <p>Features that are currently implemented</p>
     <div>
-      <h1>Upcoming Features</h1>
-      <hr>
-      <p>In order of priority</p>
-      <div id="upcoming-feats">
-        <div>
-          <h1>Documentation</h1>
-          <p>This project is currently severely underdocumented. I plan on writing a good amount of documentation for
-            all sub-projects</p>
-        </div>
-        <div>
-          <h1>Custom Event Handlers</h1>
-          <p>A custom event handler will allow you to add your own functions to run on specific player events (mouse
-            clicks, keypress, etc.)</p>
-        </div>
-        <div>
-          <h1>Better Meshes</h1>
-          <p>Triangle mesh objects currently require a lot of work to be usable.</p>
-        </div>
-        <div>
-          <h1>Image type support</h1>
-          <p>Custom engines for more image filetypes like JPG and BMP to allow for more flexible texturing</p>
-        </div>
-        <div>
-          <h1>Audio</h1>
-          <p>Engines for audio filetypes like MP3 and WAV</p>
-        </div>
-        <div>
-          <h1>Improved Zest</h1>
-          <p>Zest currently functions as almost a configuration language. I'd like to upgrade it to function as a
-            full-fledged programming language.</p>
-        </div>
-        <div>
-          <h1>3D Models</h1>
-          <p>Support for rendering custom OBJ files (or other 3D object file formats)</p>
-        </div>
-        <div>
-          <h1>ASM-WS Improvements</h1>
-          <p>Functionality like reading POST request data, handling PUT, DELETE, etc. methods, and executing files on
-            GET methods</p>
-        </div>
+      <div>
+        <h1>Ray-tracing engine</h1>
+        <p>The game engine uses a ray-tracing engine to render 3D scenes</p>
+      </div>
+      <div>
+        <h1>0-poly Spheres and 1-poly Rectangles</h1>
+        <p>Spheres are rendered as 0-polygon shapes and rectangles are rendered as 1-polygon shapes for efficiency</p>
+      </div>
+      <div>
+        <h1>Textures</h1>
+        <p>Spheres and rectangles can be textured with solid colors or PNGs (PNG texturing is only tested on rectangles)
+        </p>
+      </div>
+      <div>
+        <h1>Custom PNG Reading Library</h1>
+        <p>Z3D features a custom library to read PNGs from binary to usable RGB pixel array</p>
+      </div>
+      <div>
+        <h1>Character Controller</h1>
+        <p>Functionality to control camera movement through your keyboard and mouse</p>
+      </div>
+      <div>
+        <h1>Basic Physics Engine</h1>
+        <p>A basic physics engine which allows you to apply forces and gravity.</p>
+      </div>
+      <div>
+        <h1>ASM-WS</h1>
+        <p>A webserver written in x86 assembly that can handle GET and POST requests</p>
+      </div>
+      <div>
+        <h1>Zest</h1>
+        <p>Zest, as of now, is merely a configuration file that transpiles to Z3D compatible Zig. I hope to extend
+          Zest's minimal functionality to be a full programming language in the future.</p>
       </div>
     </div>
+  </section>
+  <section id="upcoming" class="feat-sec">
+    <h1>Upcoming Features</h1>
+    <hr>
+    <p>In order of priority</p>
+    <div>
+      <div>
+        <h1>Documentation</h1>
+        <p>This project is currently severely underdocumented. I plan on writing a good amount of documentation for
+          all sub-projects</p>
+      </div>
+      <div>
+        <h1>Custom Event Handlers</h1>
+        <p>A custom event handler will allow you to add your own functions to run on specific player events (mouse
+          clicks, keypress, etc.)</p>
+      </div>
+      <div>
+        <h1>Better Meshes</h1>
+        <p>Triangle mesh objects currently require a lot of work to be usable.</p>
+      </div>
+      <div>
+        <h1>Image type support</h1>
+        <p>Custom engines for more image filetypes like JPG and BMP to allow for more flexible texturing</p>
+      </div>
+      <div>
+        <h1>Audio</h1>
+        <p>Engines for audio filetypes like MP3 and WAV</p>
+      </div>
+      <div>
+        <h1>Improved Zest</h1>
+        <p>Zest currently functions as almost a configuration language. I'd like to upgrade it to function as a
+          full-fledged programming language.</p>
+      </div>
+      <div>
+        <h1>3D Models</h1>
+        <p>Support for rendering custom OBJ files (or other 3D object file formats)</p>
+      </div>
+      <div>
+        <h1>ASM-WS Improvements</h1>
+        <p>Functionality like reading POST request data, handling PUT, DELETE, etc. methods, and executing files on
+          GET methods</p>
+      </div>
   </section>
 </body>
 <script src="js/script.js"></script>

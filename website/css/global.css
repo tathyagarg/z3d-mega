@@ -22,6 +22,10 @@
   --surface1: var(--dark-surface1);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Nidus Sans", sans-serif;
   margin: 0;
@@ -34,6 +38,10 @@ body {
 section {
   min-height: 100vh;
   width: 100%;
+}
+
+section:not(:nth-child(2)) {
+  backdrop-filter: blur(0.5em);
 }
 
 #navbar {
@@ -139,5 +147,21 @@ section {
 
 #canvas {
   display: block;
+  position: fixed;
+  pointer-events: none;
+}
+
+#warn {
+  position: fixed;
+  height: 50px;
+  width: 50px;
+
+  z-index: 100;
+  font-size: 50px;
+
+  top: calc(100% - 75px);
+  left: 25px;
+
+  cursor: pointer;
 }
 

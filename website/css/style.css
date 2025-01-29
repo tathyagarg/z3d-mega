@@ -3,3 +3,54 @@
   font-size: 9.5vh;
 }
 
+#demo {
+  padding: 0 5%;
+  box-sizing: border-box;
+}
+
+#demo h1 {
+  font-size: 5em;
+  margin: 0;
+}
+
+#split-demo {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+#awesome {
+  display: flex;
+  height: 100vh;
+
+  background-color: rgb(from var(--surface0) r g b / 50%);
+
+  justify-content: space-around;
+  align-items: center;
+}
+
+#awesome div {
+  width: 30%;
+  height: 90%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgb(from var(--surface1) r g b / 50%);
+
+  border-radius: 1em;
+  border: 2px solid var(--border);
+
+  transition: all 0.2s;
+}
+
+#awesome div:hover {
+  scale: 0.9;
+}
+
+#awesome h1 {
+  font-size: 8em;
+  margin: 0;
+}
