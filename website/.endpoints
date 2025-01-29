@@ -2,12 +2,15 @@ GET
 / index.html
 /features features.html
 /demo demo.html
+/tryout tryout.html
 
 /css/style.css css/style.css
 /css/global.css css/global.css
 /css/features.css css/features.css
+/css/tryout.css css/tryout.css
 
 /js/script.js js/script.js
+/js/tryout.js js/tryout.js
 
 /assets/font.ttf assets/font.ttf
 /assets/logo.png assets/logo.png

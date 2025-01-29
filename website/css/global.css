@@ -9,17 +9,21 @@
   --light-text: #4c4f69;
   --light-surface0: #ccd0da;
   --light-surface1: #bcc0cc;
+  --light-accent: #209fb5;
 
   --dark-base: #24273a;
   --dark-text: #cad3f5;
   --dark-surface0: #414559;
   --dark-surface1: #494d64;
+  --dark-accent: #7dc4e4;
 
   --base: var(--dark-base);
   --text: var(--dark-text);
+  --anti-text: var(--light-text);
   --border: var(--light-base);
   --surface0: var(--dark-surface0);
   --surface1: var(--dark-surface1);
+  --accent: var(--dark-accent);
 }
 
 html {

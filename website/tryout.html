@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Z3D Megaproject: Tryout</title>
+
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/tryout.css">
+</head>
+
+<body>
+  <div id="navbar">
+    <a href="/" id="logo">
+      <img src="assets/logo.png" height="100%" />
+    </a>
+    <div id="nav-elems">
+      <a href="/">Home</a>
+      <a href="/features">Features</a>
+      <a href="/demo">Demo</a>
+    </div>
+  </div>
+  <section id="hero">
+    <canvas id="canvas" width="0" height="0"></canvas>
+    <div id="header">
+      <h1>Tryout</h1>
+      <p>Try out Z3D for yourself</p>
+    </div>
+  </section>
+  <section id="tryout">
+    <div id="loader-parent" data-vis="false">
+      <div id="loader"></div>
+    </div>
+    <main>
+      <h1>Try out a sample scene with Z3D</h1>
+      <hr>
+      <div id="choices">
+        <select id="scene">
+          <option value="scene1">Scene 1</option>
+          <option value="scene2">Scene 2</option>
+          <option value="scene3">Scene 3</option>
+        </select>
+        <button id="tryout-btn">Tryout</button>
+      </div>
+      <div id="code-split">
+        <div>
+          <div class="topper">
+            <h1>Code (Zest)</h1>
+          </div>
+          <code>
+            <pre id="code">
+            </pre>
+          </code>
+        </div>
+        <div>
+          <div class="topper">
+            <h1>Description</h1>
+          </div>
+          <div>
+            <p id="desc"></p>
+          </div>
+        </div>
+    </main>
+  </section>
+
+</body>
+<script src="js/script.js"></script>
+<script src="js/tryout.js"></script>
+
+</html>
