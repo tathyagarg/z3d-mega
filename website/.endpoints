@@ -15,3 +15,7 @@ GET
 /assets/font.ttf assets/font.ttf
 /assets/logo.png assets/logo.png
 /assets/video.webm assets/z3d.webm
+
+# Statically serving because nest doesnt have zig or SDL2
+/tryout/scene1 ../z3d-bins/scene01.o
+/tryout/scene2 ../z3d-bins/scene02.o

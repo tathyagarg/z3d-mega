@@ -87,3 +87,26 @@ scene.addEventListener('click', function() {
   code.innerText = curr;
   desc.innerText = descriptions[scene.value];
 });
+
+async function post() {
+    if (scene.value === 'scene3') {
+        alert('Coming soon');
+        return;
+    }
+
+    const response = await fetch(`/tryout/${scene.value}`, {});
+
+    const blob = await response.blob();
+    const url = URL.createObjectURL(blob);
+    alert(url)
+
+    const a = document.createElement('a');
+    a.href = url;
+    let filename = scene.value;
+
+    a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    window.URL.revokeObjectURL(url);
+}

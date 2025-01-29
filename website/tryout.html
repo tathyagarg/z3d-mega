@@ -19,6 +19,7 @@
       <a href="/">Home</a>
       <a href="/features">Features</a>
       <a href="/demo">Demo</a>
+      <a href="/tryout">Tryout</a>
     </div>
   </div>
   <section id="hero">
@@ -34,6 +35,8 @@
     </div>
     <main>
       <h1>Try out a sample scene with Z3D</h1>
+      <p>Disclaimer: These only work on x86-64 Linux systems with SDL2 installed (as far as I know, since I haven't been
+        able to test on other systems)</p>
       <hr>
       <div id="choices">
         <select id="scene">
@@ -41,7 +44,7 @@
           <option value="scene2">Scene 2</option>
           <option value="scene3">Scene 3</option>
         </select>
-        <button id="tryout-btn">Tryout</button>
+        <button id="tryout-btn" onclick="post()">Tryout</button>
       </div>
       <div id="code-split">
         <div>
