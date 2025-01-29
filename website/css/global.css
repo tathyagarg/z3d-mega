@@ -1,0 +1,143 @@
+@font-face {
+  font-family: "Nidus Sans";
+  src: url("../assets/font.ttf");
+}
+
+:root {
+  /* Thank you catppuccin! */
+  --light-base: #eff1f5;
+  --light-text: #4c4f69;
+  --light-surface0: #ccd0da;
+  --light-surface1: #bcc0cc;
+
+  --dark-base: #24273a;
+  --dark-text: #cad3f5;
+  --dark-surface0: #414559;
+  --dark-surface1: #494d64;
+
+  --base: var(--dark-base);
+  --text: var(--dark-text);
+  --border: var(--light-base);
+  --surface0: var(--dark-surface0);
+  --surface1: var(--dark-surface1);
+}
+
+body {
+  font-family: "Nidus Sans", sans-serif;
+  margin: 0;
+
+  background-color: var(--base);
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+section {
+  min-height: 100vh;
+  width: 100%;
+}
+
+#navbar {
+  width: 90%;
+  height: 10vh;
+
+  border: 2px solid var(--border);
+  border-radius: 1em;
+  display: flex;
+  transition: all 0.5s;
+  
+  position: fixed;
+  top: 1vh;
+  left: 50%;
+  transform: translateX(-50%);
+
+  /* Doing rgba(var(--surface), 50%) didn't work on Firefox */
+  background-color: rgb(from var(--surface0) r g b / 50%);
+  backdrop-filter: blur(0.25em);
+
+  box-shadow: inset 0 0 0.2em var(--border);
+  transition: all 0.2s;
+  z-index: 1000;
+}
+
+#navbar:hover {
+  box-shadow: inset 0 0 0.5em var(--border); 
+}
+
+#nav-elems {
+  width: 100%;
+
+  padding: 0 3em;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  font-size: 1.5em;
+}
+
+#nav-elems a {
+  color: var(--text);
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+
+  transition: all 0.5s;
+  line-height: 8vh;
+  padding: 0 3em;
+
+  border-radius: 1em;
+}
+
+#nav-elems a:hover {
+  text-shadow: 0 0 0.2em var(--text);
+  background-color: var(--surface1);
+}
+
+#logo {
+  height: 80%;
+  margin: auto 1em;
+}
+
+#header {
+  padding: 2rem;
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background-color: rgb(from var(--surface0) r g b / 0.2);
+  backdrop-filter: blur(0.5em);
+  border-radius: 1em;
+  border: 2px solid var(--border);
+}
+
+#header > h1 {
+  font-size: 20em;
+  margin: 0;
+}
+
+#header > h2 {
+  font-size: 10em;
+  margin: 0;
+}
+
+#header p {
+  margin: 0;
+  text-shadow: 0 0 0.5em var(--text);
+}
+
+#hero {
+  position: relative;
+}
+
+#hero > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#canvas {
+  display: block;
+}
+

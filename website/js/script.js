@@ -22,19 +22,14 @@ const SPEED_X = 0.0001;
 var canvas = document.getElementById('canvas'),
     ctx = canvas.getContext('2d');
 
-var wave = document.getElementById('wave');
-
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
-//wave.width = window.innerWidth;
-wave.setAttribute('width', window.innerWidth);
 
 var deltaTime, timeLast = 0;
 
 window.addEventListener('resize', () => {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
-  wave.width = window.innerWidth;
 
   refreshCubes();
 });

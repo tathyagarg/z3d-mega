@@ -1,0 +1,83 @@
+#upcoming {
+  background-color: var(--surface1);
+}
+
+#upcoming > div {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#upcoming h1 {
+  margin: 0;
+  font-size: 5em;
+}
+
+#upcoming-feats {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+  gap: 1em;
+}
+
+#upcoming-feats div {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+
+  background-color: var(--surface1);
+  border-radius: 1em;
+  border: 2px solid var(--border);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0.25em;
+  box-sizing: border-box;
+}
+
+#upcoming-feats h1 {
+  font-size: 2em;
+  text-align: center;
+}
+
+#upcoming-feats p {
+  text-align: center;
+
+  display: none;
+  transition: display 0.5s allow-discrete;
+}
+
+#upcoming-feats div:hover p {
+  display: block;
+
+  transition: display 0.5s allow-discrete;
+}
+
+#split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+
+  height: 100px;
+}
+
+#split div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid var(--border);
+  border-radius: 1em;
+  cursor: pointer;
+}
+
+#split a {
+  font-size: 1.5em;
+  text-decoration: none;
+  color: var(--text);
+
+  height: 100%;
+  width: 100%;
+
+  line-height: 100px;
+}
