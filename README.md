@@ -49,4 +49,4 @@ The Z3D mega project is a collection of (currently) 2 projects, which are:
 ### Upcoming features to Zest
 - A full programming language
 
-
+PS: Extensive use of Github Copilot was made in the making of this project
